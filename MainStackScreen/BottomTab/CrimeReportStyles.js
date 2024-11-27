@@ -1,0 +1,202 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { width, height } = Dimensions.get('window');
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#494d50',
+    },
+    header: {
+        paddingTop: 60,
+        paddingBottom: 30,
+        backgroundColor: '#13191b',
+        alignItems: 'center',
+        shadowColor: '#ff9f43',
+        shadowOpacity: 0.5,
+        shadowRadius: 15,
+    },
+    logo: {
+        width: 200,
+        height: 60,
+        marginBottom: 15,
+    },
+    headerContent: {
+        alignItems: 'center',
+    },
+    welcomeText: {
+        color: '#fff',
+        fontSize: 24,
+        fontWeight: 'bold',
+        textShadowColor: '#ff6f00',
+        textShadowRadius: 5,
+    },
+    subtitle: {
+        color: '#fcead8',
+        fontSize: 16,
+        fontStyle: 'italic',
+        marginVertical: 5,
+    },
+    genderButtons: {
+        flexDirection: 'row',
+        marginTop: 15,
+        justifyContent: 'space-around',
+        width: '90%',
+    },
+    genderButton: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingVertical: 12,
+        paddingHorizontal: 18,
+        borderRadius: 20,
+        borderColor: '#ffa74f',
+        borderWidth: 1,
+        marginHorizontal: 10,
+        backgroundColor: '#ffecdb',
+        shadowColor: '#ff9f43',
+        shadowOpacity: 0.4,
+        shadowRadius: 8,
+        elevation: 5,
+    },
+    selectedButton: {
+        backgroundColor: '#f2d3a1', // Darker orange when selected
+        borderColor: '#ff6f00',
+    },
+    genderText: {
+        marginLeft: 8,
+        color: '#ff6f00',
+        fontSize: 16,
+        fontWeight: '600',
+    },
+    icon: {
+        width: 24,
+        height: 24,
+        tintColor: '#ff6f00',
+    },
+    noteContainer: {
+        marginTop: 15,
+        backgroundColor: '#fff8e6', // Light background for the alert section
+        padding: 15,
+        borderRadius: 15,
+        shadowColor: '#ffab40',
+        shadowOpacity: 0.5,
+        shadowRadius: 10,
+        elevation: 8,
+        alignItems: 'center',
+        width: '90%',
+    },
+    noteContent: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginVertical: 10,
+    },
+    noteText: {
+        color: '#ff6f00',
+        fontSize: 14,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        marginLeft: 10,
+    },
+    submitButton: {
+        backgroundColor: '#ff5722', // Dark orange button for urgency
+        paddingVertical: 12,
+        paddingHorizontal: 20,
+        borderRadius: 25,
+        alignItems: 'center',
+        marginTop: 10,
+        shadowColor: '#ff3d00',
+        shadowOpacity: 0.6,
+        shadowRadius: 8,
+        elevation: 5,
+    },
+    submitButtonText: {
+        color: '#fff',
+        fontSize: 16,
+        fontWeight: '700',
+    },
+    mapContainer: {
+        position: 'relative',
+        backgroundColor: '#ffe8cc',
+        overflow: 'hidden',
+        shadowColor: '#ff9f43',
+        shadowOpacity: 0.3,
+        shadowRadius: 10,
+        elevation: 5,
+    },
+    mapFullscreen: {
+        position: 'absolute',
+        right: 10,
+        bottom: 10,
+        backgroundColor: '#ff6f00',
+        padding: 10,
+        borderRadius: 50,
+        shadowColor: '#ff3d00',
+        shadowOpacity: 0.5,
+        shadowRadius: 5,
+    },
+    scrollView: {
+        flex: 1,
+        backgroundColor: '#fff6e5',
+        marginTop: 1
+    },
+    modalContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    },
+    modalView: {
+        backgroundColor: '#fff',
+        borderRadius: 20,
+        paddingVertical: 25,
+        paddingHorizontal: 20,
+        alignItems: 'center',
+        width: '90%',
+        shadowColor: '#ff9f43',
+        shadowOpacity: 0.4,
+        shadowRadius: 10,
+        elevation: 10,
+    },
+    modalTitle: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#ff6f00',
+        textAlign: 'center',
+        marginBottom: 15,
+    },
+    modalInstruction: {
+        marginVertical: 10,
+        fontSize: 14,
+        color: '#ff6f00',
+        textAlign: 'center',
+    },
+    textInput: {
+        backgroundColor: '#fffcf5',
+        borderRadius: 8,
+        padding: 10,
+        fontSize: 14,
+        width: '100%',
+        borderColor: '#ffa74f',
+        borderWidth: 1,
+        marginBottom: 15,
+    },
+    closeButton: {
+        position: 'absolute',
+        top: "92%",
+        right: 10,
+    },
+    closeIcon: {
+        alignSelf: 'flex-end',
+    },
+    photoPreview: {
+        width: '100%',
+        height: 150,
+        borderRadius: 10,
+        marginVertical: 10,
+        borderColor: '#ffab40',
+        borderWidth: 1,
+    },
+});
+
+export default styles;
